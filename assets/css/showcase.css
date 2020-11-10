@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0%;
+  font-family: sans-serif;
+}
+body.showcase {
+  position: relative;
+}
+.showcase div.general-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+  position: absolute;
+}
+
+.showcase nav.navigation {
+  background-color: gray;
+  height: 100vh;
+  width: 8vw;
+  max-width: 100px;
+  min-width: 70px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  position: relative;
+}
+.showcase h1.logo {
+  display: inline-block;
+  position: absolute;
+  margin-top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+.showcase h2.main-title {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  font-size: 40px; /*delete*/
+  text-align: center;
+  white-space: nowrap;
+}
+
+.showcase div.buttons {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.showcase div.button {
+  font-size: 25px;
+  margin: 20px;
+}
+
+.showcase div.main-showcase {
+  padding: 100px 20px 0 120px;
+  height: 100vh;
+  width: 100vw;
+  background-color: lightgray;
+}
+.showcase div.showcase-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.showcase div.portrait-main {
+  background: no-repeat center right;
+  background-size: cover;
+  height: 100%;
+  width: 30%;
+}
+.showcase div.showcase-explanation {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.showcase div.showcase-main {
+  margin: 5px;
+  height: auto;
+  width: 100%;
+}
+.showcase div.showcase-sub {
+  margin: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.showcase div.portrait-sub {
+  background: no-repeat top center;
+  background-size: cover;
+  height: 100%;
+  width: 30%;
+}
+.showcase div.showcase-sub-sub {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.showcase div.images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+p.paragraph-main {
+  font-size: 2.5vh;
+  line-height: 5vh;
+}
+p.paragraph-sub {
+  height: fit-content;
+  font-size: 2vw;
+  line-height: 3vh;
+  padding: 20px;
+}
+.showcase h3.title {
+  font-size: 15vh;
+  float: left;
+  margin: 0 50px 10px 0;
+  width: 100%;
+}
+.showcase div.image-box {
+  margin: 0 20px 0 20px;
+  width: 45%;
+  padding-bottom: 30%;
+  background-color: grey;
+}
+
+.portrait-main#eden1 {
+  background-image: url(../images/Eden.png);
+}
+.portrait-sub#eden2 {
+  background-image: url(../images/Eden2.png);
+}
+.portrait-main#nero {
+  background-image: url(../images/Water.png);
+}

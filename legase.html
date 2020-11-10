@@ -1,0 +1,107 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/menu_overlay_right.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/menu_overlay_left.css"
+    />
+    <script src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./menu_overlay.js"></script>
+    <title>legase</title>
+  </head>
+  <body>
+    <div class="bg" onclick="closeNavR(), closeNavL()"></div>
+    <div class="main-body">
+      <div class="logo-home">
+        <a href="legase.html"
+          ><img
+            src="assets/images/logo.svg"
+            alt=""
+            style="width: 100px; height: auto"
+          />
+          legase</a
+        >
+      </div>
+      <span class="menubtn" onclick="openNavR(),closeNavL()">&#9776;</span>
+      <!--Right main navgiation bar-->
+      <div class="navbar-right" id="navbarR">
+        <div class="closebtn">
+          <a href="javascript:void(0)" onclick="closeNavR()" id="closebtn"
+            >&times;</a
+          >
+        </div>
+        <div class="menus">
+          <a href="#" class="concept" onclick="openNavL(), closeNavR()"
+            >Concept</a
+          >
+          <a href="#" class="gallery" onclick="openNavL(), closeNavR()"
+            >Gallery</a
+          >
+          <a href="contact.html" class="contact">Contact</a>
+        </div>
+        <p id="copyright"><!--copyright-->&copy;legase 2020</p>
+      </div>
+      <!--Left navgiation bar-->
+      <div class="navbar-left" id="navbarL">
+        <div class="closebtn">
+          <a href="javascript:void(0)" onclick="closeNavL()" id="closebtn"
+            >&times;</a
+          >
+        </div>
+        <div class="menus">
+          <a href="#" class="concept">Concept</a>
+          <div class="sub-menus">
+            <div class="sub" id="characters">
+              <a href="#" class="sub" id="characters" onclick="openMenu()"
+                >Main characters</a
+              >
+              <div class="sub-sub-menus" id="characters">
+                <a href="#" id="eden">Eden</a>
+                <a href="#" id="cole">Cole</a>
+                <a href="#" id="catherina">Catherina</a>
+              </div>
+            </div>
+            <div class="sub" id="elementals">
+              <a href="elementals.html" class="sub" id="elementals"
+                >Elementals</a
+              >
+              <div class="sub-sub-menus" id="elementals">
+                <a href="">Fire | Floga</a>
+                <a href="">Water | Nero</a>
+                <a href="">Stone | Livada</a>
+                <a href="">Forest | Thirio</a>
+              </div>
+            </div>
+            <div class="sub" id="world">
+              <a href="world.html" class="sub" id="world">Worlds</a>
+              <div class="sub-sub-menus" id="world">
+                <a href="">Flying Island | Monaxias</a>
+                <a href="">The Underworld | Vrana</a>
+              </div>
+            </div>
+            <div class="sub" id="objects">
+              <a href="objects.html" class="sub" id="objects">Objects</a>
+            </div>
+          </div>
+          <div class="gallery-contact">
+            <a href="gallery.html" class="gallery">Gallery</a>
+            |
+            <a href="contact.html" class="contact">Contact</a>
+          </div>
+        </div>
+        <p id="copyright"><!--copyright-->&copy;legase 2020</p>
+      </div>
+    </div>
+
+    <div id="monaxias"><img src="assets/images/Monaxias.png" alt="" /></div>
+  </body>
+</html>

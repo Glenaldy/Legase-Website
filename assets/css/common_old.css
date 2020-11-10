@@ -1,0 +1,103 @@
+body {
+  color: white;
+  font-family: sans-serif;
+  background-color: gray;
+  font-size: 50px;
+}
+
+.main-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bg {
+  background: url(../images/flogaview.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+div.main-body div.logo-home a {
+  font-size: 50px;
+  color: rgba(42, 42, 42, 1);
+}
+
+/*logo*/
+div.logo-home {
+  margin: 30px;
+  position: relative;
+}
+div.logo-home-big {
+  margin: 30px;
+  text-align: right;
+  transform: skew(-20deg, 0deg);
+}
+div#monaxias {
+  border: solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+}
+div#monaxias img {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div#monaxias img:hover {
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-fill-mode: none;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg), translate(-50%, -50%);
+  }
+  to {
+    transform: rotate(359deg), translate(-50%, -50%);
+  }
+}
+
+div.page-title-bar {
+  background-color: rgba(113, 113, 113, 100);
+  width: 8%;
+  text-align: left;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.logo-home-small {
+  margin: auto auto;
+}
+
+h1.page-title {
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+  font-size: 40px;
+}
+
+h1.page-back {
+  margin: auto auto;
+  text-align: center;
+}
