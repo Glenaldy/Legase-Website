@@ -12,11 +12,14 @@
   --clr-main: #333333;
   --clr-secondary: #e4e4e4;
   --clr-font: #ffffff;
+  --clr-accent1: #770000;
+  --clr-accent2: #10003f;
 
   --fs-h1: 4vw;
   --fs-h2: 2.5vw;
   --fs-h3: 1.5vw;
-  --fs-big: 36px;
+  --fs-xbig: 60px;
+  --fs-big: 48px;
   --fs-default: 36px;
   --fs-medium: 24px;
   --fs-small: 18px;
@@ -30,6 +33,7 @@ body {
   font-size: var(--fs-default);
   color: var(--clr-font);
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,8 +57,7 @@ header {
   height: 100px;
   padding: 0 25px;
   background-color: var(--clr-main);
-  position: absolute;
-  top: 0;
+  z-index: 999;
 }
 header > * {
   height: 100%;
@@ -110,10 +113,10 @@ footer {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 200px;
   padding: 0 25px;
   background-color: var(--clr-main);
-  position: absolute;
-  bottom: 0;
+  z-index: 999;
 }
 footer > * {
   height: 100px;
@@ -135,6 +138,103 @@ footer p {
 
 /*PAGE everything goes in here*/
 div.page {
-  height: 2000px;
-  border: solid;
+  position: relative;
+  width: 100%;
+}
+
+/*PAGE-MAIN the giant showcase view of the section*/
+.page-showcase {
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-color: var(--clr-accent1);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.showcase-title {
+  font-size: var(--fs-big);
+  z-index: 2;
+}
+.showcase-description {
+  font-size: var(--fs-medium);
+  width: 50vw;
+  max-width: 500px;
+  text-align: right;
+  z-index: 2;
+}
+.showcase-background {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.showcase-background > * {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+/*PAGE-BANNER this is the showcase banner for character/world*/
+.page-banners {
+  width: 100%;
+  height: auto;
+  background-color: var(--clr-accent2);
+}
+.banner {
+  height: 20vh;
+  max-height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.banner-image img {
+  width: 100%;
+  height: auto;
+}
+.banner-image {
+  width: 15vw;
+  max-width: 250px;
+  min-width: 200px;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+.banner-title {
+  margin: 0 150px;
+  font-size: var(--fs-big);
+  z-index: 2;
+}
+.banner-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+.banner-background > * {
+  width: 100%;
+  opacity: 50%;
+}
+.banner-border {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  border: solid 10px;
 }
