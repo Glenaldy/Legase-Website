@@ -81,7 +81,7 @@ body {
   width: auto;
   position: absolute;
   transform: translate(-50%, -50%);
-  left: -70%;
+  left: 50%;
   top: 50%;
   height: 150%;
 }
