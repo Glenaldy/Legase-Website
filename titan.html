@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="scripts/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/css/reset.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts/js/jquery-3.5.1.min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/js/common.js"></script>
+    <script type="text/javascript" src="scripts/js/jquery.transit.js"></script>
+    <title>Legase</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="background moving">
+        <img
+          id="titanSpace"
+          src="assets/page-specific/2-creation-of-titan/background.png"
+          alt=""
+        />
+      </div>
+      <header>
+        <h1>
+          <a href="map.html">
+            <img src="assets/logos/legase-title_logo_White.svg" alt="Legase" />
+          </a>
+        </h1>
+      </header>
+      <div class="content">
+        <div class="objectContainer" id="standingTitan">
+          <img
+            class="objectImage"
+            src="assets/page-specific/2-creation-of-titan/object.png"
+            alt="Standing Titan"
+            onclick="setTimeout( function() {location.href='grave.html';},1000)"
+          />
+        </div>
+        <div class="slideInAnimation" id="titanPoem">
+          <p id="poemOne">大昔、神は宇宙を作った。</p>
+          <p id="poemTwo">
+            そしてこの星に、 <br />土、地をあげる。 <br />水、海を注ぐ。
+            <br />風、温度調査する。 <br />最後は、生命、人間を作った。
+          </p>
+          <p id="poemThree">
+            全ての災害から見守ろうとした<br />神は四の巨人をあそこに送りさせた。
+          </p>
+          <p id="poemFour">何世紀も過ぎ去った。<br />全ては綺麗だった。</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p id="copyright">
+        © 2020
+        <br />
+        Designed and Created by Legase Team
+      </p>
+    </footer>
+  </body>
+</html>

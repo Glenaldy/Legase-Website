@@ -1,0 +1,134 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="scripts/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/css/reset.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts/js/jquery-3.5.1.min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/js/common.js"></script>
+    <script type="text/javascript" src="scripts/js/jquery.transit.js"></script>
+    <title>Legase</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <p>&lt;</p>
+        <ul>
+          <li><a href="map.html">World</a></li>
+          <li>
+            <a href="character.html">Character</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="background moving">
+        <img
+          id="mapOfWorld"
+          src="assets/page-specific/4-map/background.png"
+          alt=""
+        />
+      </div>
+      <header>
+        <h1>
+          <a> <img src="assets/logos/legase-title_logo.svg" alt="Legase" /> </a>
+        </h1>
+      </header>
+      <div class="content">
+        <div class="objectContainer" id="maps">
+          <div
+            class="objectImage mapItem triggerFlame"
+            id="objectMonaxias"
+            onclick="setTimeout( function() {location.href='monaxias.html';},0)"
+          >
+            <img
+              src="assets/page-specific/4-map/objectMonaxias.png"
+              alt="Monaxias The Flying Fortress"
+            />
+            <div
+              class="mapLogo triggeredFlame"
+              onclick="setTimeout( function() {location.href='#';},0)"
+            >
+              <img
+                src="assets/page-specific/4-map/monaxias.svg"
+                alt="Monaxias"
+              />
+            </div>
+          </div>
+          <div
+            class="objectImage mapItem mapHighlight"
+            id="objectThirio"
+            onclick="setTimeout( function() {location.href='thirio.html';},0)"
+          >
+            <div
+              class="mapLogo"
+              onclick="setTimeout( function() {location.href='thirio.html';},0)"
+            >
+              <img src="assets/page-specific/4-map/thirio.svg" alt="Monaxias" />
+            </div>
+          </div>
+          <div
+            class="objectImage mapItem mapHighlight"
+            id="objectNero"
+            onclick="setTimeout( function() {location.href='nero.html';},0)"
+          >
+            <div
+              class="mapLogo"
+              onclick="setTimeout( function() {location.href='nero.html';},0)"
+            >
+              <img src="assets/page-specific/4-map/nero.svg" alt="Monaxias" />
+            </div>
+          </div>
+          <div
+            class="objectImage mapItem mapHighlight"
+            id="objectFloga"
+            onclick="setTimeout( function() {location.href='floga.html';},0)"
+          >
+            <div
+              class="mapLogo"
+              onclick="setTimeout( function() {location.href='floga.html';},0)"
+            >
+              <img src="assets/page-specific/4-map/floga.svg" alt="Monaxias" />
+            </div>
+          </div>
+          <div
+            class="objectImage mapItem mapHighlight"
+            id="objectLivada"
+            onclick="setTimeout( function() {location.href='livada.html';},0)"
+          >
+            <div
+              class="mapLogo"
+              onclick="setTimeout( function() {location.href='livada.html';},0)"
+            >
+              <img src="assets/page-specific/4-map/livada.svg" alt="Monaxias" />
+            </div>
+          </div>
+          <div class="slideInAnimation">
+            <p>The world</p>
+            <h1>Legase</h1>
+          </div>
+        </div>
+      </div>
+      <div class="playAgain">
+        <a href="index.html">▶ History</a>
+      </div>
+    </div>
+    <footer>
+      <p id="copyright">
+        © 2020
+        <br />
+        Designed and Created by Legase Team
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="scripts/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/css/reset.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts/js/jquery-3.5.1.min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/js/common.js"></script>
+    <script type="text/javascript" src="scripts/js/jquery.transit.js"></script>
+    <title>Legase</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="background moving">
+        <img
+          id="graveCave"
+          src="assets/page-specific/3-grave/background.png"
+          alt=""
+        />
+      </div>
+      <header>
+        <h1>
+          <a href="map.html">
+            <img src="assets/logos/legase-title_logo_White.svg" alt="Legase" />
+          </a>
+        </h1>
+      </header>
+      <div class="content">
+        <div class="objectContainer" id="deadTitan">
+          <img
+            class="triggeredFlame"
+            id="flameBG"
+            src="assets/page-specific/3-grave/object.png"
+            alt="Flame"
+          />
+          <div
+            class="objectImage triggerFlame"
+            id="flameClick"
+            onclick="setTimeout( function() {location.href='map.html';},1000)"
+          >
+            <img
+              id="flame"
+              src="assets/page-specific/3-grave/object.png"
+              alt="Flame"
+            />
+          </div>
+          <img
+            src="assets/page-specific/3-grave/backgroundTop.png"
+            alt="Dead Titan"
+          />
+        </div>
+        <div class="slideInAnimation" id="graveTitan">
+          <h1>Forgotten<br />Grave</h1>
+          <p>
+            だが、ある日巨人達は死んだ。<br />
+            災害は過ぎから過ぎへと行った半滅した人間は<br />
+            最後の要塞を作って、それを空に逃がした。
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p id="copyright">
+        © 2020
+        <br />
+        Designed and Created by Legase Team
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,159 +1,56 @@
-<html lang="en" class="concept">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/css/reset.css" />
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="assets/js/assets.js"></script>
-    <script type="text/javascript" src="assets/js/common.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.transit.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
+    <script
+      type="text/javascript"
+      src="scripts/js/jquery-3.5.1.min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/js/common.js"></script>
+    <script type="text/javascript" src="scripts/js/jquery.transit.js"></script>
     <title>Legase</title>
   </head>
 
   <body>
-    <header>
-      <div class="logo clickable">
-        <img src="assets/images/SVG/Logo.svg" alt="" />
+    <div class="container">
+      <div class="background moving">
+        <img
+          id="monaxiasCloud"
+          src="assets/page-specific/1-landing-page/background.png"
+          alt=""
+        />
       </div>
-      <ul class="navigation">
-        <li class="clickable"><a href="index.html">Concept</a></li>
-        <li class="clickable expander">
-          <a href="gallery">Gallery</a>
-          <ul class="expanding hide-load">
-            <li><a href="main-character.html">Main Character</a></li>
-            <li><a href="#">The World</a></li>
-          </ul>
-        </li>
-        <li class="clickable"><a href="contact.hmtl">Contact</a></li>
-      </ul>
-    </header>
-    <div class="page">
-      <div class="page-showcase">
-        <div class="showcase-title">The World</div>
-        <div class="showcase-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quam
-          recusandae laborum dicta placeat excepturi doloribus iste nihil
-          adipisci, impedit magni. Molestias tenetur minima dignissimos nobis
-          fuga, culpa itaque ab!
-        </div>
-        <div class="showcase-background">
-          <img src="assets/images/the-world.JPG" alt="" />
-        </div>
-      </div>
-      <div class="page-banners">
-        <div class="banner character-banner"></div>
-        <div class="banner world-banner"></div>
-      </div>
-      <div class="page-character">
-        <div class="character-title">The People of Monaxias</div>
-        <div class="character-current">
-          <div class="character-name">KING</div>
-          <div class="character-image">
-            <img src="assets/images/Main_character/Human_Man_King.png" alt="" />
-          </div>
-
-          <div class="character-paragraph scroll-box">
-            Monaxias, led by Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Reprehenderit fugit dolores ratione. The Monarchy has been
-            continuing since officia dolorem aspernatur tenetur omnis eos totam,
-            alias il sit praesentium adipisci blanditiis! Ullam iusto nulla eos
-            mollitia.The Monarchy has been continuing since officia dolorem
-            aspernatur tenetur omnis eos totam, alias il sit praesentium
-            adipisci blanditiis! Ullam iusto nulla eos mollitia.
-          </div>
-          <div class="character-quote">
-            「The legacy of Monaxias is<br />
-            the People itself」
-          </div>
-        </div>
-        <div class="character-selection">
-          <div class="character-button clickable material-icons" id="previous">
-            &#xe314;
-          </div>
-          <div class="character-profile clickable">
-            <div class="character-profile-border"></div>
-            <div class="character-profile-icon">
-              <img
-                src="assets/images/Main_character/Human_Man_King.png"
-                alt=""
-              />
-            </div>
-            <div class="character-profile-name">King</div>
-          </div>
-          <div class="character-profile clickable">
-            <div class="character-profile-border"></div>
-            <div class="character-profile-icon">
-              <img
-                src="assets/images/Main_character/Human_Woman_Queen.png"
-                alt=""
-              />
-            </div>
-            <div class="character-profile-name">Queen</div>
-          </div>
-          <div class="character-profile clickable">
-            <div class="character-profile-border"></div>
-            <div class="character-profile-icon"></div>
-            <div class="character-profile-name">Princess</div>
-          </div>
-          <div class="character-profile clickable">
-            <div class="character-profile-border"></div>
-            <div class="character-profile-icon"></div>
-            <div class="character-profile-name">Other</div>
-          </div>
-          <div class="character-button clickable material-icons" id="next">
-            &#xe315;
-          </div>
-        </div>
-        <div class="character-background">
-          <img src="assets/images/Monaxias/castle.PNG" alt="" />
-        </div>
-      </div>
-      <div class="page-slideshow">
-        <div class="slideshow-title">Monaxias</div>
-        <div class="slideshow-subtitle">The last hope of Humanity</div>
-        <div class="slideshow-wrapper">
-          <div class="slideshow-button clickable material-icons" id="previous">
-            &#xe314;
-          </div>
-          <div class="slideshow-box">
-            <div class="slideshow-image">
-              <img src="assets/images/Monaxias/1.PNG" alt="" />
-            </div>
-          </div>
-          <div class="slideshow-button clickable material-icons" id="next">
-            &#xe315;
-          </div>
-        </div>
-        <div class="slideshow-current-title">Dolor Sit Amet</div>
-        <div class="slideshow-current-description">
-          It is the place of Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Reprehenderit fugit dolores ratione. Dolor sit amet consectetur
-          adipisicing elit.
+      <header>
+        <h1>
+          <a href="map.html">
+            <img src="assets/logos/legase-title_logo_Black.svg" alt="Legase" />
+          </a>
+        </h1>
+      </header>
+      <div class="content">
+        <div class="objectContainer" id="flyingMonaxias">
+          <img
+            class="objectImage"
+            src="assets/page-specific/1-landing-page/object.png"
+            alt=""
+            onclick="setTimeout( function() {location.href='titan.html';},1000)"
+          />
         </div>
       </div>
     </div>
     <footer>
-      <ul class="navigation">
-        <li class="clickable"><a href="index.html">Concept</a></li>
-        <li class="clickable expander">
-          <a href="gallery">Gallery</a>
-          <ul class="expanding hide-load">
-            <li><a href="main-character.html">Main Character</a></li>
-            <li><a href="#">The World</a></li>
-          </ul>
-        </li>
-        <li class="clickable"><a href="contact.hmtl">Contact</a></li>
-      </ul>
-      <p>© 2020<br />Designed and Created by Legase Team</p>
+      <p id="copyright">
+        © 2020
+        <br />
+        Designed and Created by Legase Team
+      </p>
     </footer>
   </body>
 </html>

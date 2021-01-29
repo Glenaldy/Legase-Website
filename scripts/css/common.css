@@ -1,0 +1,739 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "aqua";
+  src: url("/assets/fonts/aqua/aqua.ttf");
+}
+:root {
+  --ff-primary: sans-serif;
+  --fw-thin: 100;
+  --fw-bold: 600;
+  --clr-main: #333333;
+  --clr-secondary: #e4e4e4;
+  --clr-font-dark: #000000;
+  --clr-font-light: #ffffff;
+  --clr-accent1: #770000;
+  --clr-accent2: #10003f;
+  --fs-h1: 4vw;
+  --fs-h2: 2.5vw;
+  --fs-h3: 1.5vw;
+  --fs-xbig: 60px;
+  --fs-big: 48px;
+  --fs-default: 36px;
+  --fs-medium: 24px;
+  --fs-small: 18px;
+  --fs-xsmall: 12px;
+  --page-height-one: 900px;
+  --page-height-two: 100vh;
+  --banner-height-one: 200px;
+  --banner-height-two: 200px;
+}
+
+html {
+  background-color: var(--clr-secondary);
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-default);
+  color: var(--clr-font-dark);
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  position: relative;
+  z-index: -999;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container .content {
+  flex-grow: 1;
+}
+
+.background {
+  z-index: -10;
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.background img#monaxiasCloud {
+  width: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: -70%;
+  top: 50%;
+  height: 150%;
+}
+.background img#titanSpace {
+  width: auto;
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  bottom: 0%;
+  height: 180%;
+  min-width: 120%;
+}
+.background img#graveCave {
+  width: auto;
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 0%;
+  height: 150vh;
+  min-width: 100%;
+}
+.background img#mapOfWorld {
+  width: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  height: 70%;
+}
+.background img.shortBG {
+  width: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 120%;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+.background img.longBG {
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  padding: 1rem;
+  z-index: 999;
+}
+header * {
+  text-decoration: none;
+  color: var(--clr-font2);
+}
+header h1 {
+  height: 100%;
+  margin-left: 1rem;
+}
+header h1 img {
+  height: 100px;
+}
+header h1 img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  font-family: "aqua";
+  color: black;
+  z-index: 999;
+}
+footer p {
+  font-size: 0.7rem;
+  text-align: right;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  height: 100vh;
+  position: absolute;
+  transform: translateX(250px);
+  right: 0%;
+  width: 300px;
+  font-family: "aqua";
+  padding: 30px;
+}
+nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.objectContainer {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 990;
+}
+.objectContainer img {
+  height: 100%;
+  opacity: 100%;
+}
+
+.objectContainer#flyingMonaxias {
+  height: 30%;
+  max-height: 500px;
+}
+
+.objectContainer#standingtitan {
+  height: 80%;
+  max-height: 2000px;
+}
+
+.objectContainer#deadTitan {
+  height: 150vh;
+  min-width: 100%;
+  position: fixed;
+}
+.objectContainer#deadTitan img {
+  width: auto;
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 15%;
+  height: 150vh;
+  min-width: 100%;
+  z-index: 100;
+}
+.objectContainer#deadTitan div#flameclick {
+  z-index: 999;
+  position: fixed;
+  left: 55%;
+  top: 38%;
+  height: 25%;
+  cursor: pointer;
+}
+.objectContainer#deadTitan div#flameclick img {
+  height: 100%;
+}
+.objectContainer#deadTitan #flameBG {
+  z-index: 98;
+  position: absolute;
+  height: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  opacity: 0;
+}
+
+.objectContainer#maps {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.objectContainer#maps .mapItem {
+  width: 30vh;
+  height: 30vh;
+  position: fixed;
+}
+.objectContainer#maps .mapItem > img {
+  width: auto;
+  height: 100%;
+}
+.objectContainer#maps .mapItem .mapLogo {
+  width: auto;
+  height: 15vh;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+}
+.objectContainer#maps #objectMonaxias {
+  left: 15%;
+  top: 15%;
+}
+.objectContainer#maps .mapHighlight {
+  background: radial-gradient(closest-side, white, rgba(255, 255, 255, 0));
+  border-radius: 100px;
+  opacity: 0;
+}
+.objectContainer#maps #objectThirio {
+  left: 45%;
+  top: 15%;
+}
+.objectContainer#maps #objectNero {
+  left: 55%;
+  top: 30%;
+}
+.objectContainer#maps #objectFloga {
+  left: 30%;
+  top: 35%;
+}
+.objectContainer#maps #objectLivada {
+  left: 45%;
+  top: 50%;
+}
+.objectContainer#maps .slideInAnimation {
+  position: absolute;
+  bottom: 0;
+  margin: 3vw;
+  font-family: "aqua";
+}
+.objectContainer#maps .slideInAnimation * {
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.objectContainer#maps .slideInAnimation h1 {
+  font-size: 15vh;
+  bottom: 0;
+}
+.objectContainer#maps .slideInAnimation p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.objectContainer.character {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.objectContainer.character .slideInAnimation * {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+.objectContainer.character .pageTitle {
+  font-family: "aqua";
+  margin: 20px;
+  font-size: 2rem;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.objectContainer.character .pageTitleWhite {
+  font-family: "aqua";
+  margin: 20px;
+  font-size: 2rem;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.objectContainer.character .characterBottom {
+  display: none;
+  position: relative;
+  margin-top: 120px;
+  height: calc(100% - 120px);
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.objectContainer.character .characterBottom .titleChara {
+  width: fit-content;
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+  text-align: right;
+  font-family: "aqua";
+}
+.objectContainer.character .characterBottom .titleChara h1 {
+  font-size: 5vw;
+}
+.objectContainer.character .characterBottom .titleChara p {
+  font-size: 2vw;
+  font-weight: bold;
+}
+.objectContainer.character .characterBottom .standingChara {
+  opacity: 1;
+  height: 120vw;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+.objectContainer.character .characterBottom .paragraphChara {
+  font-family: "aqua";
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.objectContainer.character .characterBottom .paragraphChara .profile {
+  font-size: 2vw;
+  font-weight: bold;
+  width: fit-content;
+  text-align: justify;
+}
+.objectContainer.character .characterBottom .paragraphChara ::-webkit-scrollbar {
+  width: 10px;
+  margin: 20px;
+}
+.objectContainer.character .characterBottom .paragraphChara ::-webkit-scrollbar-track {
+  background: none;
+}
+.objectContainer.character .characterBottom .paragraphChara ::-webkit-scrollbar-thumb {
+  background: #444;
+}
+.objectContainer.character .characterBottom .paragraphChara ::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+.objectContainer.character .characterBottom .paragraphChara * {
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+}
+.objectContainer.character .characterBottom .paragraphChara .explanation {
+  overflow: auto;
+  font-weight: 300;
+  line-height: 2.6rem;
+  width: 40%;
+  max-width: 2000px;
+  height: 150px;
+  padding-left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+.objectContainer.character .characterBottom .paragraphChara .explanation * {
+  margin: 20px;
+}
+.objectContainer.character .characterBottom .paragraphChara .explanation p {
+  font-size: 1rem;
+  color: white;
+  opacity: 1;
+  width: 100%;
+}
+.objectContainer.character .characterBottom .paragraphChara .explanation img {
+  height: auto;
+  opacity: 1;
+  top: 0;
+}
+.objectContainer.character .characterBottom.currentChara {
+  display: flex;
+}
+.objectContainer.character .creature {
+  display: flex;
+  position: relative;
+  margin-top: 150px;
+  height: calc(100% - 120px);
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.objectContainer.character .creature .titleChara {
+  color: white;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+  font-family: "aqua";
+}
+.objectContainer.character .creature .titleChara h1 {
+  font-size: 5vw;
+}
+.objectContainer.character .creature .titleChara p {
+  font-size: 2vw;
+  font-weight: bold;
+}
+.objectContainer.character .creature .standingChara {
+  opacity: 1;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.objectContainer.character .creature .paragraphChara {
+  margin-top: 50px;
+  font-family: "aqua";
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.objectContainer.character .creature .paragraphChara ::-webkit-scrollbar {
+  width: 10px;
+  margin: 20px;
+}
+.objectContainer.character .creature .paragraphChara ::-webkit-scrollbar-track {
+  background: none;
+}
+.objectContainer.character .creature .paragraphChara ::-webkit-scrollbar-thumb {
+  background: #444;
+}
+.objectContainer.character .creature .paragraphChara ::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+.objectContainer.character .creature .paragraphChara * {
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+}
+.objectContainer.character .creature .paragraphChara .explanation {
+  overflow: auto;
+  font-weight: 300;
+  line-height: 2.6rem;
+  width: 40%;
+  max-width: 2000px;
+  height: 150px;
+  padding-left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+.objectContainer.character .creature .paragraphChara .explanation p {
+  font-size: 1rem;
+  color: white;
+  opacity: 1;
+  margin: 10px 20px 10px 0;
+}
+.objectContainer.character .creature .paragraphChara .explanation img {
+  height: auto;
+  opacity: 1;
+  top: 0;
+  margin: 10px 0 10px 20px;
+}
+.objectContainer.character .characterTop {
+  transform: translateY(100px);
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  padding-right: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.objectContainer.character .characterTop .chooseCharacter {
+  cursor: pointer;
+  width: 120px;
+  height: fit-content;
+  margin: 10px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.objectContainer.character .characterTop .chooseCharacter .portrait {
+  height: 140px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.objectContainer.character .characterTop .chooseCharacter .portrait img {
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 0;
+  height: 110%;
+  margin: 0 auto;
+}
+.objectContainer.character .characterTop .chooseCharacter .name {
+  height: 30px;
+  font-size: 1.2rem;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "aqua";
+  color: white;
+  background-color: #222;
+  position: relative;
+}
+.objectContainer.character .characterTop .chooseCharacter .name * {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 60%;
+}
+.objectContainer.character .characterTop .selectedChara {
+  outline: white solid 5px;
+  outline-offset: -1px;
+  border-radius: 10px;
+}
+.objectContainer.character .characterTop .selectedChara .portrait {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.objectContainer.character .characterTop .selectedChara .name {
+  color: black;
+  background-color: white;
+}
+
+.objectContainer.worldView {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.objectContainer.worldView .slideInAnimation {
+  position: absolute;
+  top: 0;
+  margin: 3vw;
+  margin-top: 200px;
+  font-family: "aqua";
+  color: white;
+}
+.objectContainer.worldView .slideInAnimation * {
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.objectContainer.worldView .slideInAnimation h1 {
+  font-size: 10vh;
+  bottom: 0;
+}
+.objectContainer.worldView .slideInAnimation p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.objectContainer.worldView .explanation {
+  padding-top: 100px;
+  bottom: 5%;
+  right: 0;
+  width: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.objectContainer.worldView .explanation p {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px 50px;
+  line-height: 2rem;
+  text-align: right;
+}
+.objectContainer.worldView .explanation p span {
+  opacity: 1;
+}
+.objectContainer.worldView .explanation p span a {
+  color: white;
+  font-size: 1.5rem;
+  text-align: right;
+  opacity: 1;
+}
+
+.triggeredFlame {
+  opacity: 0;
+}
+
+div#titanPoem {
+  z-index: 1;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+div#titanPoem * {
+  opacity: 0;
+  margin: 50px;
+  position: absolute;
+  text-shadow: 2px 2px 3px black;
+  transform: translateX(-50px);
+}
+div#titanPoem #poemTwo {
+  left: 10%;
+  top: 15%;
+}
+div#titanPoem #poemThree {
+  right: 5%;
+  bottom: 15%;
+}
+div#titanPoem #poemFour {
+  right: 0;
+  bottom: 0;
+}
+
+div#graveTitan {
+  color: white;
+  font-size: 80px;
+  font-weight: 600;
+  font-family: "aqua";
+}
+div#graveTitan * {
+  margin: 20px;
+  text-shadow: 5px 5px 3px black;
+  opacity: 0;
+  transform: translateX(-10px);
+}
+div#graveTitan h1 {
+  margin-left: 50px;
+}
+div#graveTitan p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  margin-left: 100px;
+}
+
+.playAgain {
+  position: absolute;
+  right: 0;
+  margin: 50px;
+  font-family: "aqua";
+  font-size: 1.5rem;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.playAgain:hover {
+  transform: scale(1.1);
+}
+
+.about {
+  height: 100%;
+  padding: 1vw 5vw;
+  font-family: "aqua";
+}
+.about .people {
+  display: flex;
+  justify-content: space-around;
+}
+.about .person {
+  margin: 10px;
+}
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.about h3 {
+  font-size: 1rem;
+}
+.about ul {
+  font-size: 1rem;
+}
+.about ul * {
+  margin: 10px;
+}
+.about .pressHere {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=common.css.map */

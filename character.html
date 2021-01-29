@@ -1,0 +1,180 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="scripts/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/css/reset.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts/js/jquery-3.5.1.min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/js/common.js"></script>
+    <script type="text/javascript" src="scripts/js/jquery.transit.js"></script>
+    <title>Legase</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <p>&lt;</p>
+        <ul>
+          <li><a href="map.html">World</a></li>
+          <li>
+            <a href="character.html">Character</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="background">
+        <img
+          class="shortBG"
+          id="gondola"
+          src="assets/background/background_Monaxias_Gondola.png"
+          alt=""
+        />
+      </div>
+      <header>
+        <h1>
+          <a href="map.html">
+            <img src="assets/logos/legase-title_logo_Black.svg" alt="Legase" />
+          </a>
+        </h1>
+      </header>
+      <div class="content">
+        <div class="objectContainer character">
+          <div class="slideInAnimation pageTitle">
+            <h1>Character</h1>
+          </div>
+          <div class="characterBottom currentChara" id="eden">
+            <div class="titleChara slideInAnimation">
+              <h1>Eden Reinhart</h1>
+              <p>エデン・ラインハート</p>
+            </div>
+            <div class="standingChara slideInAnimation">
+              <img
+                src="assets/page-specific/5-character/eden/standing.png"
+                alt=""
+              />
+            </div>
+            <div class="paragraphChara slideInAnimation">
+              <p class="profile">
+                年齢　 ：　19歳<br />身長　 ：　172cm<br />誕生日 ：　2月14日
+              </p>
+              <div class="explanation">
+                <img
+                  src="assets/logos/monaxiasLogo.svg"
+                  alt=""
+                  width="30px"
+                  height="auto"
+                />
+                <p>
+                  ブルーローレルアカデミーに才能と野心から選ばれた男です。
+                  魔法の分析と錬金術の天才。父親と同じように、彼は知識への渇望を持っています。
+                  クラスのトップで卒業していた、彼は「アンダーワールド」への冒険を行うという夢をかないたい。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="characterBottom" id="cat">
+            <div class="titleChara slideInAnimation">
+              <h1>Katherine Arnett</h1>
+              <p>キャサリン　 ”キャット”・アーネット</p>
+            </div>
+            <div class="standingChara slideInAnimation">
+              <img
+                src="assets/page-specific/5-character/cat/standing.png"
+                alt=""
+              />
+            </div>
+            <div class="paragraphChara slideInAnimation">
+              <p class="profile">
+                年齢　 ：　18歳<br />身長　 ：　158cm<br />誕生日 ：　3月15日
+              </p>
+              <div class="explanation">
+                <img
+                  src="assets/logos/monaxiasLogo.svg"
+                  alt=""
+                  width="30px"
+                  height="auto"
+                />
+                <p>
+                  エデンの幼なじみとコールの妹だ。彼女は時々兄と喧嘩し、
+                  自分が二人の中で最も責任があると考えている。エデンとコールを見守りたいだけだ。
+                  天文学に興味のある,キャサリンは明るく前向きな女性だ。彼女はチームのナビゲーターになり
+                  、星との旅を案内した。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="characterBottom" id="cole">
+            <div class="titleChara slideInAnimation">
+              <h1>Cole Arnett</h1>
+              <p>コール・アーネット</p>
+            </div>
+            <div class="standingChara slideInAnimation">
+              <img
+                src="assets/page-specific/5-character/cole/standing.png"
+                alt=""
+              />
+            </div>
+            <div class="paragraphChara slideInAnimation">
+              <p class="profile">
+                年齢　 ：　21歳<br />身長　 ：　177cm<br />誕生日 ：　8月17日
+              </p>
+              <div class="explanation">
+                <img
+                  src="assets/logos/monaxiasLogo.svg"
+                  alt=""
+                  width="30px"
+                  height="auto"
+                />
+                <p>
+                  エデンの幼なじみとキャットの兄だ。三人の中で一番年上として、
+                  彼は友人や家族を見守りたい。怠け者のように見えるかもしれないが、
+                  彼の力学への情熱は誰よりも高い。彼はいつか亡くなった父親と同じくらい
+                  良くなることを夢見ている。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="characterTop">
+            <div class="chooseCharacter selectedChara" id="eden">
+              <div class="portrait">
+                <img
+                  src="assets/page-specific/5-character/eden/portrait.png"
+                  alt=""
+                />
+              </div>
+              <div class="name"><p>Eden</p></div>
+            </div>
+            <div class="chooseCharacter" id="cole">
+              <div class="portrait">
+                <img
+                  src="assets/page-specific/5-character/cole/portrait.png"
+                  alt=""
+                />
+              </div>
+              <div class="name"><p>Cole</p></div>
+            </div>
+            <div class="chooseCharacter" id="cat">
+              <div class="portrait">
+                <img
+                  src="assets/page-specific/5-character/cat/portrait.png"
+                  alt=""
+                />
+              </div>
+              <div class="name"><p>Katherine</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
